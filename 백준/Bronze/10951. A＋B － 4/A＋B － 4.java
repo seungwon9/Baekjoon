@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		
+		StringBuilder sb=new StringBuilder();
 		StringTokenizer st;
 		String str;
 		
@@ -16,7 +16,8 @@ public class Main {
 			st=new StringTokenizer(str," ");
 			int a=Integer.parseInt(st.nextToken());
 			int b=Integer.parseInt(st.nextToken());
-			System.out.println(a+b);
+			sb.append(a+b).append("\n");
 		}
+		System.out.println(sb);
 	}
 }
